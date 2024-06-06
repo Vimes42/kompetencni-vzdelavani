@@ -5,135 +5,147 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kompetenční vzdělávání</title>
     <script type="module" src="index.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <img src="/img/ANEV_logo-white1.png">
-        <nav>
-            <ul>
-                <li>Rysy kompetenčního vzdělávání</li>
-                <li>Výhody a nevýhody</li>
-                <li>Kde získat informace</li>
-                <li>Kdo za tím stojí</li>
-            </ul>
-        </nav>
+        <div class="nav">
+            <img class="logo" src="/img/ANEV_logo-white1.png">
+            <nav class="menu">
+                <ul>
+                    <li><a href="#characteristics">Rysy kompetenčního vzdělávání</a></li>
+                    <li><a href="#advantages">Výhody a nevýhody</a></li>
+                    <li><a href="#resources">Kde získat informace</a></li>
+                    <li><a href="#contact">Kdo za tím stojí</a></li>
+                </ul>
+            </nav>
+        </div>
         <div class="heading">Vzdělávání pro 21. století</div>
         <div class="subheading">ve škole i ve volném čase</div>
     </header>
-
-    <div class="intro">
-        <p>Cíl: Rozvoj kompetencí pro život a práci: Cílem kompetenčního vzdělávání
-            je rozvoj kompetencí, které studenti potřebují pro život a práci. Nejde jen o
-            získání diplomu.</p>
-        <p>Kompetenční vzdělávání je modernější a efektivnější přístup k vzdělávání, který lépe
-            připravuje studenty na život a práci. Má mnoho výhod oproti tradičnímu vzdělávání,
-            ale je také náročnější na implementaci.</p>
-        <p>Kompetenční vzdělávání má mnoho výhod oproti tradičnímu vzdělávání. Studenti
-            se učí aktivně a individuálně, čímž se zvyšuje jejich motivace a zájem o učení.
-            Hodnocení je průběžné a formativní, takže studenti dostávají zpětnou vazbu v
-            průběhu celého procesu učení a mohou se tak neustále zlepšovat. Obsah je
-            modulární a flexibilní, takže studenti si mohou vybrat moduly, které je zajímají a
-            které jim pomohou dosáhnout jejich cílů.</p>
-        <p> Tradiční vzdělávání má stále své místo, ale je důležité si uvědomit, že nevyhovuje
-            všem studentům. Kompetenční vzdělávání je modernější a efektivnější přístup,
-            který lépe připravuje studenty na život a práci.</p>
-    </div>
-    <div class="characteristics">
-        <h2>Hlavní rysy kompetenčního vzdělávání</h2>
-        <div intro class="characteristics__char1">Zaměření na kompetence: Kompetenční vzdělávání se zaměřuje na rozvoj
-            kompetencí a dovedností, které studenti potřebují pro život a práci. Nejde jen
-            o předávání znalostí a faktů.</div>
-        <div intro class="characteristics__char2">Aktivní a individuální učení: Studenti se učí aktivně a individuálně. Jsou
-            zodpovědní za svůj vlastní proces učení a učitelé jim v tom pomáhají.</div>
-        <div intro class="characteristics__char3">Průběžné a formativní hodnocení: Hodnocení je průběžné a formativní.
-            Studenti dostávají zpětnou vazbu v průběhu celého procesu učení a mohou
-            se tak neustále zlepšovat.</div>
-        <div intro class="characteristics__char4">Modulární a flexibilní obsah: Obsah je modulární a flexibilní. Studenti si
-            mohou vybrat moduly, které je zajímají a které jim pomohou dosáhnout jejich cílů.</div>
-        <div intro class="characteristics__char5">Individuální tempo: Studenti se učí svým vlastním tempem. Neexistuje
-            žádné jednotné tempo pro všechny.</div>
-        <div intro class="characteristics__char6">Učitel jako facilitátor: Učitel je facilitátor a průvodce. Pomáhá studentům učit
-            se a rozvíjet své kompetence.</div>
-        <div intro class="characteristics__char7">Zaměření na studenta: Učení je zaměřeno na studenta. Učitel vychází z
-            potřeb a zájmů studenta.</div>
-    </div>
-    <div class="differences">
-        <h2>Rozdíly mezi kompetenčním vzděláváním a tradičním vzděláváním ve školách</h2>
-        <table class="differences__table">
-            <tr class="differences__table--heading">
-                <td>Aspekt</td>
-                <td>Kompetenční vzdělávání</td>
-                <td>Tradiční vzdělávání</td>
-            </tr>
-            <tr class="differences__table--text">
-                <td>Zaměření</td>
-                <td>Rozvoj kompetencí (znalost, dovednost, postoj)</td>
-                <td>Předávání znalostí a faktů</td>
-            </tr>
-            <tr class="differences__table--text">
-                <td>Učení</td>
-                <td>Aktivní a individuální</td>
-                <td>Pasivní a skupinové</td>
-            </tr>
-            <tr class="differences__table--text">
-                <td>Hodnocení</td>
-                <td>Průběžné a formativní</td>
-                <td>Konečné a summativní</td>
-            </tr>
-            <tr class="differences__table--text">
-                <td>Obsah</td>
-                <td>Modulární a flexibilní</td>
-                <td>Pevně daný a standardizovaný</td>
-            </tr>
-            <tr class="differences__table--text">
-                <td>Tempo</td>
-                <td>Individuální</td>
-                <td>Uniformní</td>
-            </tr>
-            <tr class="differences__table--text">
-                <td>Učitel</td>
-                <td>Facilitátor a průvodce</td>
-                <td>Instruktor a expert</td>
-            </tr>
-            <tr class="differences__table--text">
-                <td>Učení</td>
-                <td>Zaměřeno na studenta</td>
-                <td>Zaměřeno na učitele</td>
-            </tr>
-            <tr class="differences__table--text">
-                <td>Cíl</td>
-                <td>Rozvoj kompetencí pro život a práci</td>
-                <td>Získání diplomu</td>
-            </tr>
-        </table>
-    </div>
-
-    <div class="advantages">
-        <div class="advantages__advantages">
-            <ul>
-                <li>Lepší příprava studentů na život a práci</li>
-                <li>Vyšší motivace a zájem o učení</li>
-                <li>Rozvoj klíčových dovedností, jako je kritické myšlení, řešení problémů a
-                    komunikace</li>
-                <li>Lepší individuální přístup ke studentům</li>
-            </ul>
+    <div class="main">
+        <div class="intro">
+            <p class="intro__description">Cílem kompetenčního vzdělávání je rozvoj kompetencí (znalosti, dovednosti, postoje a hodnoty), které studentstvo potřebuje pro život a práci.</p>
+            <p class="intro__description">Jedná se o modernější a efektivnější přístup k vzdělávání. Studentstvo se učí aktivně a individuálně, čímž se <strong>zvyšuje jejich motivace a zájem o učení</strong>.</p>
+            
         </div>
-        <div class="advantages__disadvantages">
-            <ul>
-                <li>Náročnější na pedagogy</li>
-                <li>Vyšší náklady na implementaci</li>
-                <li>Může být obtížné hodnotit kompetence</li>
-            </ul>
+        <div class="characteristics" id="characteristics">
+            <h2>Hlavní rysy kompetenčního vzdělávání</h2>
+            <div intro class="characteristics__char1">Zaměření na kompetence: Kompetenční vzdělávání se zaměřuje na rozvoj
+                kompetencí a dovedností, které studenti potřebují pro život a práci. Nejde jen
+                o předávání znalostí a faktů.</div>
+            <div intro class="characteristics__char2">Aktivní a individuální učení: Studenti se učí aktivně a individuálně. Jsou
+                zodpovědní za svůj vlastní proces učení a učitelé jim v tom pomáhají.</div>
+            <div intro class="characteristics__char3">Průběžné a formativní hodnocení: Hodnocení je průběžné a formativní.
+                Studenti dostávají zpětnou vazbu v průběhu celého procesu učení a mohou
+                se tak neustále zlepšovat.</div>
+            <div intro class="characteristics__char4">Modulární a flexibilní obsah: Obsah je modulární a flexibilní. Studenti si
+                mohou vybrat moduly, které je zajímají a které jim pomohou dosáhnout jejich cílů.</div>
+            <div intro class="characteristics__char5">Individuální tempo: Studenti se učí svým vlastním tempem. Neexistuje
+                žádné jednotné tempo pro všechny.</div>
+            <div intro class="characteristics__char6">Učitel jako facilitátor: Učitel je facilitátor a průvodce. Pomáhá studentům učit
+                se a rozvíjet své kompetence.</div>
+            <div intro class="characteristics__char7">Zaměření na studenta: Učení je zaměřeno na studenta. Učitel vychází z
+                potřeb a zájmů studenta.</div>
+        </div>
+        <div class="differences">
+            <h2>Rozdíly mezi kompetenčním vzděláváním a tradičním vzděláváním</h2>
+            <table class="differences__table">
+                <tr class="differences__table--heading">
+                    <td>Aspekt</td>
+                    <td>Kompetenční vzdělávání</td>
+                    <td>Tradiční školní vzdělávání</td>
+                </tr>
+                <tr class="differences__table--text">
+                    <td>Zaměření</td>
+                    <td>Rozvoj kompetencí (znalosti, dovednosti, postoje a hodnoty)</td>
+                    <td>Předávání znalostí a faktů</td>
+                </tr>
+                <tr class="differences__table--text">
+                    <td>Učení</td>
+                    <td>Aktivní a individuální</td>
+                    <td>Pasivní a skupinové</td>
+                </tr>
+                <tr class="differences__table--text">
+                    <td>Hodnocení</td>
+                    <td>Průběžné a formativní</td>
+                    <td>Konečné a summativní</td>
+                </tr>
+                <tr class="differences__table--text">
+                    <td>Obsah</td>
+                    <td>Modulární a flexibilní</td>
+                    <td>Pevně daný a standardizovaný</td>
+                </tr>
+                <tr class="differences__table--text">
+                    <td>Tempo</td>
+                    <td>Individuální</td>
+                    <td>Uniformní</td>
+                </tr>
+                <tr class="differences__table--text">
+                    <td>Učitel</td>
+                    <td>Facilitátor a průvodce</td>
+                    <td>Instruktor a expert</td>
+                </tr>
+                <tr class="differences__table--text">
+                    <td>Učení</td>
+                    <td>Zaměřeno na studenta</td>
+                    <td>Zaměřeno na učitele</td>
+                </tr>
+                <tr class="differences__table--text">
+                    <td>Cíl</td>
+                    <td>Rozvoj kompetencí pro život a práci</td>
+                    <td>Získání diplomu</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="advantages" id="advantages">
+            <h2>Výhody a nevýhody kompetenčního vzdělávání</h2>
+            <div class="advantages__box">
+            <div class="advantages__advantages">
+                <h3>Výhody</h3>
+                <ul>
+                    <li>Lepší příprava studentů na život a práci</li>
+                    <li>Vyšší motivace a zájem o učení</li>
+                    <li>Rozvoj klíčových dovedností, jako je kritické myšlení, řešení problémů a
+                        komunikace</li>
+                    <li>Lepší individuální přístup ke studentům</li>
+                </ul>
+            </div>
+            <div class="advantages__disadvantages">
+                <h3>Nevýhody</h3>
+                <ul>
+                    <li>Náročnější na pedagogy</li>
+                    <li>Vyšší náklady na implementaci</li>
+                    <li>Může být obtížné hodnotit kompetence</li>
+                </ul>
+            </div>
+        </div>
+        </div>
+
+        <div class="resources" id="resources">
+            <h2>Zdroje</h2>
+            <p>Mnoho zdrojů ještě neexistuje, zejména ne v ČR. Jedná se o nový koncept, který se nyní formuje v souladu se Strategií 2030+.</p>
+            <p>Koncept popsaný na těchto stránkách vychází z více než 20let know-how expertek z Asociace neformálního vzdělávání (ANEV).</p>
+            <h3>Školení</h3>
+            <p></p>
+            <h3>Ke čtení</h3>
+            <p>Článek o <a href="https://aurora-institute.org/blog/how-competency-based-education-differs-
+                from-the-traditional-system-of-education/"> kompetenčním vzdělávání </a> od Aurora Institute (v angličtině)</p>
+        </div>
+
+        <div class="contact" id="contact">
+            <h2>Kontakt</h2>
+            <p>Asociace neformálního vzdělávání, z.s.</p>
+            <p>info@anev.cz</p>
+            <p>telefon</p>
         </div>
     </div>
-
-    <div class="resources">
-        <h2>Zdroje</h2>
-        <p>Mnoho zdrojů ještě neexistuje, zejména ne v ČR. Koncept vytváří ze svého know-how Asociace neformálního vzdělávání.</p>
-        <h3>Školení</h3>
-        <p></p>
-        <h3>Ke čtení</h3>
-        <p></p>
-    </div>
+    <footer>
+        Asociace neformálního vzdělávání, 2024
+    </footer>
 </body>
 </html>
