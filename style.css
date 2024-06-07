@@ -1,21 +1,22 @@
 *{
     font-family: "Nunito Sans", sans-serif;
+    color: rgb(84, 84, 84);
 }
 
 h2{
-    font-size: 2em;
+    font-size: 3em;
     text-align: center;
     margin: 2em 0 2em 0;
+    text-decoration: underline dotted greenyellow;
 }
 
 header{
     height: 100vh;
-    width: 90vw;
-    padding-left: 5vw;
-    padding-right: 5vw;
+    width: 98vw;
+    
     background-color: rgb(154, 154, 154);
     color: rgb(84, 84, 84);
-    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+    
     background-image: url("img/Marker_191.jpg");
     background-size: cover;
     background-position: center;
@@ -28,13 +29,17 @@ header{
 }
 
 .logo{
-    height: 7vw;
+    height: 4vw;
     padding: 20px;
 }
 
 .nav{
     display: flex;
     justify-content: space-between;
+    padding-top: 1vh;
+    background-color: rgb(84, 84, 84);
+    opacity: 0.6;
+    position: sticky;
 }
 
 .menu{
@@ -46,15 +51,18 @@ header{
 
 .menu a{
     text-decoration: none;
+    color: white;
+    padding: 10px;
 }
 
-.menu a:visited{
-    color: rgb(84, 84, 84);;
+.menu a:active{
+    color: rgb(224, 224, 118);
     text-decoration: none;
 }
 
 .menu a:hover{
     color: lightgreen;
+    border: 1px solid white;
 }
 
 .menu a:active{
@@ -81,6 +89,7 @@ header{
     padding-top: 10vw;
     padding-bottom: 1vw;
     font-size: 5em;
+    text-shadow: -1px 0 beige, 0 1px beige, 1px 0 beige, 0 -1px beige;
 }
 
 .subheading{
@@ -88,7 +97,46 @@ header{
     padding-top: 1vw;
     padding-bottom: 2vw;
     font-size: 2em;
+    text-shadow: -1px 0 beige, 0 1px beige, 1px 0 beige, 0 -1px beige;
 }
+
+.intro{
+    margin: 20vh 5vw 20vh 5vw;
+    text-align: center;
+}
+
+.intro__description--up{
+    font-size: 1.9em;
+    font-weight: bold;
+    margin-bottom: 10vh;
+}
+
+.intro__description--down{
+    font-size: 1.5em;
+}
+
+.underline__dotted{
+    text-decoration: underline wavy greenyellow;
+    font-weight: bold;
+}
+
+.characteristics__div{
+    display: flex;
+}
+
+.characteristics div + div{
+    margin-left: 10px;
+}
+
+.characteristics__char1, .characteristics__char2, .characteristics__char3, .characteristics__char4, .characteristics__char5, .characteristics__char6, .characteristics__char7 {
+    border: 2px solid yellowgreen;
+    padding: 5px;
+    text-align: center;
+}
+
+
+
+
 
 footer{
     background-color: rgb(84, 84, 84);
