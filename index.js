@@ -36,23 +36,23 @@ const chars = [
     },
     {
         heading: 'Průběžné a formativní hodnocení',
-        text: 'Hodnocení je průběžné a formativní. Studenti dostávají zpětnou vazbu v průběhu celého procesu učení a mohou se tak neustále zlepšovat.'
+        text: 'Hodnocení je průběžné a formativní. Studentstvo dostává zpětnou vazbu v průběhu celého procesu učení a mohou se tak neustále zlepšovat.'
     },
     {
         heading: 'Modulární a flexibilní obsah',
-        text: 'Obsah je modulární a flexibilní. Studenti si mohou vybrat moduly, které je zajímají a které jim pomohou dosáhnout jejich cílů.'
+        text: 'Obsah je modulární a flexibilní. Studentstvo si může vybrat moduly, které je zajímají a které jim pomohou dosáhnout jejich cílů.'
     },
     {
         heading: 'Individuální tempo',
-        text: 'Studenti se učí svým vlastním tempem. Neexistuje žádné jednotné tempo pro všechny.'
+        text: 'Každý/á se učí svým vlastním tempem. Neexistuje žádné jednotné tempo pro všechny.'
     },
     {
-        heading: 'Učitel jako facilitátor',
-        text: 'Učitel je facilitátor a průvodce. Pomáhá studentům učit se a rozvíjet své kompetence.'
+        heading: 'Učitel/ka jako facilitátor/ka',
+        text: 'Učitel/ka je facilitátor/ka a průvodce/kyně. Pomáhá studentstvu učit se a rozvíjet své kompetence.'
     },
     {
-        heading: 'Zaměření na studenta',
-        text: 'Učení je zaměřeno na studenta. Učitel vychází z potřeb a zájmů studenta.'
+        heading: 'Zaměření na studentstvo',
+        text: 'Učení je zaměřeno na studentstvo. Učitel/ka vychází z potřeb a zájmů studentstva.'
     },
     
 ];
@@ -63,44 +63,3 @@ chars.forEach(char => {
 });
 
 
-
-/* img2.classList.add('icon_more');*/
-/* const characteristicsDiv = (heading, text) => {
-    characteristicsDiv.addEventListener("onmouse", () => {
-        const characteristicsDivHTML = document.querySelector(".characteristics__div");
-        characteristicsDivHTML += (`<p>${text}</p>`)
-        })
-    return (
-            <div intro class="characteristics__char">
-                <img src="/img/check_157977.png" alt="icon_check" class="icon_check"/> 
-                <h3>{heading}</h3>
-                <img src="/img/arrow-down-sign-navigate_32195.png" />
-            </div>
-)}
-
-
-
-
-const chars = [
-    {
-        heading: "Zaměření na kompetence",
-        text: "Kompetenční vzdělávání se zaměřuje na rozvoj znalostí, dovedností a postojů, které studentstvo potřebuje pro život a práci. Nejde jen o předávání znalostí a faktů."
-        },
-    {
-        heading: "Aktivní a individuální učení",
-        text: "Studentstvo se učí aktivně a individuálně. Je zodpověné za svůj vlastní proces učení, učitelky a učitelé jim v tom pomáhají."
-        },
-]
-
-
-const characteristicsDivHTML = document.querySelector(".characteristics__div");
-characteristicsDivHTML = characteristicsDiv(chars.heading, chars.text);*/
-
-/*
-            <div intro class="characteristics__char2"><img src="/img/check_157977.png" alt="icon_check" class="icon_check">: </div>
-            <div intro class="characteristics__char3"><img src="/img/check_157977.png" alt="icon_check" class="icon_check"></div>
-            <div intro class="characteristics__char4"><img src="/img/check_157977.png" alt="icon_check" class="icon_check"></div>
-            <div intro class="characteristics__char5"><img src="/img/check_157977.png" alt="icon_check" class="icon_check">
-            <div intro class="characteristics__char6"><img src="/img/check_157977.png" alt="icon_check" class="icon_check">
-            <div intro class="characteristics__char7"><img src="/img/check_157977.png" alt="icon_check" class="icon_check">Zaměření na studenta: Učení je zaměřeno na studenta. Učitel vychází z
-                potřeb a zájmů studenta.</div>*/
