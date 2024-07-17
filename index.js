@@ -1,6 +1,6 @@
 console.log("ok")
 
-const characteristicsDiv = (heading, text) => {
+/* const characteristicsDiv = (heading, text) => {
     characteristicsDiv.addEventListener("onmouse", () => {
         const characteristicsDivHTML = document.querySelector(".characteristics__div");
         characteristicsDivHTML += (`<p>${text}</p>`)
@@ -29,7 +29,7 @@ const chars = [
 
 
 const characteristicsDivHTML = document.querySelector(".characteristics__div");
-characteristicsDivHTML = characteristicsDiv(chars.heading, chars.text);
+characteristicsDivHTML = characteristicsDiv(chars.heading, chars.text);*/
 
 /*
             <div intro class="characteristics__char2"><img src="/img/check_157977.png" alt="icon_check" class="icon_check">: </div>
