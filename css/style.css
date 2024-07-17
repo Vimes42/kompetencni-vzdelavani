@@ -134,13 +134,93 @@ header{
     text-align: center;
 }
 
-.icon_check{
+.characteristics__div {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.characteristics__char {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
+    width: 30%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid yellowgreen;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    transition: all 0.3s ease; /* Plynulá animace */
+}
+
+.characteristics__char p {
+    margin: 10px 0 0 0;
+    transition: max-height 0.3s ease, opacity 0.3s ease;
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+}
+
+.characteristics__char p.show {
+    max-height: 200px; /* Max výška při zobrazení, upravit dle potřeby */
+    opacity: 1;
+}
+
+
+
+.icon_more {
     padding: 10px;
     max-width: 30px;
 }
 
+.differences__table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 16px;
+}
 
+.differences__table--heading {
+    background-color: #f2f2f2;
+    color: yellowgreen;
+    text-align: center;
+    font-weight: bold;
+    padding: 12px 15px;
+}
+
+.differences__table--text td {
+    padding: 12px 15px;
+}
+
+.differences__table--text:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.differences__table td {
+    border-bottom: 1px solid #ddd;
+}
+
+.differences__table tr:hover {
+    background-color: yellowgreen;
+}
+
+.differences__table--text td:first-child {
+    font-weight: bold;
+    color: #555;
+    text-align: center;
+}
+
+.differences__table--text td:nth-child(2),
+.differences__table--text td:nth-child(3) {
+    text-align: center;
+}
+
+
+
+.advantages__box{
+    display: flex;
+}
 
 
 
