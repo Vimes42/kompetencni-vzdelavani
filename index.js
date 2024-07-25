@@ -63,3 +63,7 @@ chars.forEach(char => {
 });
 
 
+const buttonOffer = document.querySelector(".offer");
+buttonOffer.addEventListener("click", function() {
+    window.open("https://www.anev.cz/wp-content/uploads/2024/04/nabidka_spoluprace_anev_final.pdf", "_blank");
+  });

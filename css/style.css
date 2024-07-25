@@ -222,6 +222,27 @@ header{
     display: flex;
 }
 
+.h3_resources{
+    text-align: center;
+}
+
+button {
+    background-color: yellowgreen;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    padding: 12px 25px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: box-shadow 0.2s ease, background-color 0.2s ease;
+    margin-left: 35%;
+    margin-bottom: 50px;
+  }
+  
+  button:hover {
+    background-color: rgb(177, 237, 56);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  }
 
 
 footer{
