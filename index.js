@@ -28,23 +28,23 @@ const characteristicsDiv = (heading, text) => {
 const chars = [
     {
         heading: 'Zaměření na kompetence',
-        text: 'Kompetenční vzdělávání se zaměřuje na rozvoj znalostí, dovedností a postojů, které studentstvo potřebuje pro život a práci. Nejde jen o předávání znalostí a faktů.'
+        text: 'Kompetenční vzdělávání se zaměřuje na rozvoj znalostí, dovedností, hodnot a postojů, které studentstvo potřebuje pro život a práci. Nejde jen o předávání znalostí a faktů.'
     },
     {
-        heading: 'Aktivní a individuální učení',
-        text: 'Studentstvo se učí aktivně a individuálně. Je zodpovědné za svůj vlastní proces učení, učitelky a učitelé jim v tom pomáhají.'
+        heading: 'Aktivní a individualizované učení',
+        text: 'Studentstvo se učí aktivně a individuálně (sami či ve skupině). Je zodpovědné za svůj vlastní proces učení, učitelky a učitelé jim v tom pomáhají.'
     },
     {
         heading: 'Průběžné a formativní hodnocení',
-        text: 'Hodnocení je průběžné a formativní. Studentstvo dostává zpětnou vazbu v průběhu celého procesu učení a mohou se tak neustále zlepšovat.'
+        text: 'Studentstvo dostává zpětnou vazbu v průběhu celého procesu učení a mohou se tak neustále zlepšovat.'
     },
     {
         heading: 'Modulární a flexibilní obsah',
-        text: 'Obsah je modulární a flexibilní. Studentstvo si může vybrat moduly, které je zajímají a které jim pomohou dosáhnout jejich cílů.'
+        text: 'Studentstvo si může vybrat moduly, které je zajímají a které jim pomohou dosáhnout jejich cílů.'
     },
     {
         heading: 'Individuální tempo',
-        text: 'Každý/á se učí svým vlastním tempem. Neexistuje žádné jednotné tempo pro všechny.'
+        text: 'Neexistuje žádné jednotné tempo pro všechny.'
     },
     {
         heading: 'Učitel/ka jako facilitátor/ka',
@@ -52,7 +52,7 @@ const chars = [
     },
     {
         heading: 'Zaměření na studentstvo',
-        text: 'Učení je zaměřeno na studentstvo. Učitel/ka vychází z potřeb a zájmů studentstva.'
+        text: 'Učení je zaměřeno na studentstvo. Vzdělavatel/ka vychází z potřeb a zájmů studentstva.'
     },
     
 ];
