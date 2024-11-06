@@ -234,7 +234,8 @@ header {
 }
 
 .differences__table--text td:nth-child(2),
-.differences__table--text td:nth-child(3) {
+.differences__table--text td:nth-child(3),
+.differences__table--text td:nth-child(4) {
     text-align: center;
 }
 
