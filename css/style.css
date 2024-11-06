@@ -10,19 +10,21 @@ h2{
     text-decoration: underline dotted greenyellow;
 }
 
-header{
+header {
     height: 100vh;
     width: 98vw;
-    
     background-color: rgb(154, 154, 154);
     color: rgb(84, 84, 84);
     
-    background-image: url("/img/Marker_191.jpg");
+    /* Přidání gradientu s průhledností před obrázek */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/Marker_191.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     margin-bottom: 100px;
 }
+
+
 
 .main{
     margin: 0 5vw 0 5vw;
@@ -40,6 +42,11 @@ header{
     background-color: rgb(84, 84, 84);
     opacity: 0.6;
     position: sticky;
+    transition: background-color 0.3s ease;
+}
+
+.nav a:hover {
+    color: yellowgreen; /* Změna barvy při najetí myší */
 }
 
 .menu{
@@ -56,17 +63,13 @@ header{
 }
 
 .menu a:active{
-    color: rgb(224, 224, 118);
+    color: greenyellow;
     text-decoration: none;
 }
 
 .menu a:hover{
-    color: lightgreen;
-    border: 1px solid white;
-}
-
-.menu a:active{
     color: greenyellow;
+    border: 1px solid white;
 }
 
 .menu ul{
@@ -92,12 +95,25 @@ header{
     text-shadow: -1px 0 beige, 0 1px beige, 1px 0 beige, 0 -1px beige;
 }
 
-.subheading{
+.subheading {
     text-align: center;
     padding-top: 1vw;
     padding-bottom: 2vw;
     font-size: 2em;
     text-shadow: -1px 0 beige, 0 1px beige, 1px 0 beige, 0 -1px beige;
+    position: relative;
+    text-decoration: none;
+}
+
+.subheading::after {
+    content: "";
+    display: block;
+    width: 60%; /* délka čáry, můžeš upravit podle potřeby */
+    height: 4px;
+    background-color: yellowgreen;
+    margin: 0 auto;
+    margin-top: 10px; /* vzdálenost od textu */
+    border-radius: 2px; /* zaoblené okraje */
 }
 
 .intro{
@@ -152,6 +168,7 @@ header{
     border-radius: 10px;
     margin-bottom: 20px;
     transition: all 0.3s ease; /* Plynulá animace */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Přidání stínu */
 }
 
 .characteristics__char p {
@@ -160,6 +177,7 @@ header{
     overflow: hidden;
     max-height: 0;
     opacity: 0;
+    transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out; /* Plynulý efekt */
 }
 
 .characteristics__char p.show {
@@ -167,6 +185,10 @@ header{
     opacity: 1;
 }
 
+.characteristics__char:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Zvýraznění karty */
+    transform: scale(1.02); /* Malé zvětšení pro efekt */
+}
 
 
 .icon_more {
@@ -244,6 +266,11 @@ button {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
   }
 
+  button:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.6);
+}
+
 
 footer{
     background-color: rgb(84, 84, 84);
@@ -251,3 +278,18 @@ footer{
     text-align: center;
     color: white;
 }
+
+
+@media (max-width: 768px) {
+    .characteristics__char {
+        width: 100%; 
+    }
+    .nav {
+        flex-direction: column; /* Přepnutí na sloupcový layout */
+    }
+    .menu {
+        text-align: center; /* Vycentrování menu */
+    }
+    
+}
+
