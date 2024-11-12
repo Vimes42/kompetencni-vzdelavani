@@ -1,5 +1,12 @@
 console.log("ok")
 
+const hamburger = document.getElementById('hamburger-icon');
+const menu = document.querySelector('.menu');
+hamburger.addEventListener('click', () => {
+    menu.classList.toggle('active'); 
+});
+    
+
 const characteristicsDiv = (heading, text) => {
     const div = document.createElement('div');
     div.classList.add('characteristics__char');
@@ -19,6 +26,7 @@ const characteristicsDiv = (heading, text) => {
 
     div.addEventListener('click', () => {
         p.classList.toggle('show');
+        img2.classList.toggle('rotated');
     });
 
     return div;
@@ -64,58 +72,33 @@ chars.forEach(char => {
     characteristicsDivHTML.appendChild(characteristicsDiv(char.heading, char.text));
 });
 
-const advantagesDiv = (text) => {
-    const div = document.createElement('div');
-    div.classList.add('advantages__adv');
-
-    const h3 = document.createElement('h3');
-    h3.textContent = text;
-    div.appendChild(h3);
-
-    return div;
-};
 
 
-
-const advants = [
-    {
-        text: 'Lepší příprava studentstva na život a práci',
-    },
-    {
-        text: 'Jejich vyšší motivace a zájem o učení',
-    },
-    {
-        text: 'Cílený rozvoj klíčových kompetencí, jako je kritické myšlení, řešení problémů a komunikace',
-    },
-    {
-        text: 'Lepší individuální přístup ke studentstvu ze strany učitelstva',
-    },
-]
-
-const advantagesDivHTML = document.querySelector('.advantages__box');
-advants.forEach(adv => {
-    advantagesDivHTML.appendChild(advantagesDiv(adv.text));
-});
 
 const faqDiv = (text, answer) => {
     const div = document.createElement('div');
     div.classList.add('faq__question');
 
+    const div2 = document.createElement('div');
+    div2.classList.add('faq__question__up');
+    div.appendChild(div2);
+
     const h3 = document.createElement('h3');
     h3.textContent = text;
-    div.appendChild(h3);
+    div2.appendChild(h3);
 
     const img3 = document.createElement('img');
     img3.src = '/img/arrow-right.png';
     img3.classList.add('icon_more');
-    div.appendChild(img3);
+    div2.appendChild(img3);
 
     const p = document.createElement('p');
-    p.textContent = answer;
+    p.innerHTML = answer;
     div.appendChild(p);
 
     div.addEventListener('click', () => {
         p.classList.toggle('show');
+        img3.classList.toggle('rotated');
     });
 
     return div;
@@ -124,7 +107,7 @@ const faqDiv = (text, answer) => {
 const questions = [
     {
         text: 'Jak mohu kompetenční vzdělávání zapojit do učení?',
-        answer: `Jde například o to, brát v potaz, že studentstvo rozvíjí znalosti, dovednosti, postoje a hodnoty. Cíle učení by tak měly být formulovány z pohledu všech složek kompetencí a dle toho je také třeba volit vhodné metody, které cílové skupině pomohou rozvíjet se. Pro více informací o zacílení aktivit můžete proklikat náš e-learning.`
+        answer: `Jde například o to, brát v potaz, že studentstvo rozvíjí znalosti, dovednosti, postoje a hodnoty. Cíle učení by tak měly být formulovány z pohledu všech složek kompetencí a dle toho je také třeba volit vhodné metody, které cílové skupině pomohou rozvíjet se. Pro více informací o zacílení aktivit můžete proklikat náš <a href="https://www.slabikarnfv.eu/cs/e-learning target="_blank"">e-learning</a>.`
     },
     {
         text: "Má kompetenční vzdělávání vyšší náklady na implementaci?",
@@ -132,7 +115,7 @@ const questions = [
     },
     {
         text: "Jak hodnotit kompetence?",
-        answer: 'To jsme právě testovali s učiteli a učitelkami, jež prochází naším školením Marker do škol. Brzy přineseme konkrétní výsledky.'
+        answer: 'To jsme právě testovali s učiteli a učitelkami, jež prochází naším školením <a href="https://markercs.cz/cs/skolycs/ target="_blank"">Marker do škol</a>. Brzy přineseme konkrétní výsledky.'
     },
 ]
 
