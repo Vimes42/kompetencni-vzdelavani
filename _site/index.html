@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kompetenční vzdělávání</title>
     <script type="module" src="index.js"></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
@@ -17,19 +17,26 @@
             <nav class="menu">
                 <ul>
                     <li><a href="#characteristics">Rysy kompetenčního vzdělávání</a></li>
-                    <li><a href="#advantages">Výhody a nevýhody</a></li>
+                    <li><a href="#advantages">Výhody a otazníky</a></li>
                     <li><a href="#resources">Kde získat informace</a></li>
                     <li><a href="#contact">Kdo za tím stojí</a></li>
                 </ul>
             </nav>
+             <!-- Hamburger icon -->
+            <div class="hamburger" id="hamburger-icon">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
         </div>
-        <div class="heading">Vzdělávání pro 21. století</div>
-        <div class="subheading">ve škole i ve volném čase</div>
+        <h1 class="heading">KOMPETENČNÍ VZDĚLÁVÁNÍ</h1>
+        <h2 class="subheading">učení pro 21. století</h2>
+        <div class="decorative-line"></div>
     </header>
     <div class="main">
         <div class="intro">
-            <p class="intro__description intro__description--up">Cílem kompetenčního vzdělávání je <span class="underline__dotted">rozvoj kompetencí (znalosti, dovednosti, postoje a hodnoty)</span>, které studentstvo potřebuje pro život a práci.</p>
-            <p class="intro__description intro__description--down">Jedná se o modernější a efektivnější přístup ke vzdělávání. Studentstvo se učí aktivně a individuálně, čímž se <span class="underline__dotted">zvyšuje jejich motivace a zájem o učení.</span></p>
+            <p class="intro__description intro__description--up">Kompetenční vzdělávání je <span class="underline__wavy">zaměřeno na rozvoj kompetencí (znalosti, dovednosti, postoje a hodnoty)</span>, které jsou potřebné pro život a práci.</p>
+            <p class="intro__description intro__description--down">Studentstvo se učí aktivně a individuálně, čímž se <span class="underline__wavy">zvyšuje jejich motivace a zájem o učení.</span></p>
             
         </div>
         <div class="characteristics" id="characteristics">
@@ -40,95 +47,121 @@
         </div>
         <div class="differences">
             <h2>Rozdíly mezi kompetenčním vzděláváním a tradičním vzděláváním</h2>
+            <p>Vzdělávání ve školách i v kroužcích může probíhat ∞ způsoby. Pro účely pochopení konceptu kompetenčního vzdělávání zde dáváme do kontextu tradiční školu (frontální výuku striktně jdoucí po tématech ŠVP) a tradiční kroužek v zájmovém vzdělávání (třeba kroužek keramiky v DDM).</p>
             <table class="differences__table">
                 <tr class="differences__table--heading">
                     <td>Aspekt</td>
                     <td>Kompetenční vzdělávání</td>
                     <td>Tradiční školní vzdělávání</td>
+                    <td>Tradiční zájmové vzdělávání (např. kroužek)</td>
                 </tr>
                 <tr class="differences__table--text">
                     <td>Zaměření</td>
                     <td>Rozvoj kompetencí (znalosti, dovednosti, postoje a hodnoty)</td>
                     <td>Předávání znalostí a faktů</td>
+                    <td>Rozvoj znalostí a dovedností (rozvoj postojů a hodnot většinou nezacílen)</td>
                 </tr>
                 <tr class="differences__table--text">
                     <td>Učení</td>
-                    <td>Aktivní a individuální</td>
+                    <td>Aktivní a individualizované (může být v rámci skupiny)</td>
                     <td>Pasivní a skupinové</td>
+                    <td>Aktivní a skupinové</td>
                 </tr>
                 <tr class="differences__table--text">
                     <td>Hodnocení</td>
                     <td>Průběžné a formativní</td>
                     <td>Konečné a summativní</td>
+                    <td>Průběžné a formativní</td>
                 </tr>
                 <tr class="differences__table--text">
                     <td>Obsah</td>
                     <td>Modulární a flexibilní</td>
                     <td>Pevně daný a standardizovaný</td>
+                    <td>V rámci DDM spíše daný, reálně ale flexibilnější</td>
                 </tr>
                 <tr class="differences__table--text">
                     <td>Tempo</td>
                     <td>Individuální</td>
                     <td>Uniformní</td>
+                    <td>Individuální</td>
                 </tr>
                 <tr class="differences__table--text">
-                    <td>Učitelka / Učitel</td>
+                    <td>Učitel/ka</td>
                     <td>Facilitátor/ka a průvodce/kyně</td>
+                    <td>Instruktor/ka a expert/ka</td>
                     <td>Instruktor/ka a expert/ka</td>
                 </tr>
                 <tr class="differences__table--text">
                     <td>Učení</td>
-                    <td>Zaměřeno na studenta</td>
-                    <td>Zaměřeno na učitele</td>
+                    <td>Zaměřeno na potřeby z řad studentstva</td>
+                    <td>Zaměřeno na to, co potřebuje probrat učitelstvo</td>
+                    <td>Zaměřeno na to, co chce předat vedoucí kroužku</td>
                 </tr>
                 <tr class="differences__table--text">
                     <td>Cíl</td>
                     <td>Rozvoj kompetencí pro život a práci</td>
-                    <td>Získání diplomu</td>
+                    <td>Získání diplomu / kvalifikace</td>
+                    <td>Rozvoj znalostí a dovedností v oblasti zájmu studenta/ky</td>
                 </tr>
             </table>
         </div>
-
+        
         <div class="advantages" id="advantages">
-            <h2>Výhody a nevýhody kompetenčního vzdělávání</h2>
+            <h2>Výhody kompetenčního vzdělávání</h2>
             <div class="advantages__box">
-            <div class="advantages__advantages">
-                <h3>Výhody</h3>
-                <ul>
-                    <li>Lepší příprava studentů na život a práci</li>
-                    <li>Vyšší motivace a zájem o učení</li>
-                    <li>Rozvoj klíčových dovedností, jako je kritické myšlení, řešení problémů a
-                        komunikace</li>
-                    <li>Lepší individuální přístup ke studentům</li>
-                </ul>
-            </div>
-            <div class="advantages__disadvantages">
-                <h3>Nevýhody</h3>
-                <ul>
-                    <li>Náročnější na pedagogy</li>
-                    <li>Vyšší náklady na implementaci</li>
-                    <li>Může být obtížné hodnotit kompetence</li>
-                </ul>
-            </div>
+            <ul class="advantages__list">
+                <li class="advantages__list--item">Lepší příprava studentstva na život a práci</li>
+                <li class="advantages__list--item">Jejich vyšší motivace a zájem o učení</li>
+                <li class="advantages__list--item">Cílený rozvoj klíčových kompetencí, jako je kritické myšlení, řešení problémů a komunikace</li>
+                <li class="advantages__list--item">Lepší individuální přístup ke studentstvu ze strany učitelstva</li>
+            </ul>
+            
         </div>
+        </div>
+
+        <div class="faq" id="faq">
+            <h2>Časté otázky</h2>
+            <div class="faq__box">
+
+            </div>
         </div>
 
         <div class="resources" id="resources">
-            <h2>Zdroje</h2>
-            <p>Mnoho zdrojů ještě neexistuje, zejména ne v ČR. Jedná se o nový koncept, který se nyní formuje v souladu se Strategií 2030+.</p>
-            <p>Koncept popsaný na těchto stránkách vychází z více než 20let know-how expertek z Asociace neformálního vzdělávání (ANEV).</p>
-            <h3>Školení</h3>
-            <p></p>
-            <h3>Ke čtení</h3>
-            <p>Článek o <a href="https://aurora-institute.org/blog/how-competency-based-education-differs-
-                from-the-traditional-system-of-education/"> kompetenčním vzdělávání </a> od Aurora Institute (v angličtině)</p>
+            <h2>Kde zjistit víc?</h2>
+            <p class="center">Koncept popsaný na těchto stránkách vychází z <span class="underline__wavy">více než 20let know-how</span>  expertek a expertů z Asociace neformálního vzdělávání (ANEV). Kompetenční vzdělávání přináší možnost reálného propojování metodiky neformálního a formálního vzdělávání, které se neomezuje jen na využití konkrétních interaktivních metod, ale <span class="underline__wavy">inovuje celkový způsob výuky</span>. Sepsané poznatky jsou <span class="underline__wavy">mnohokrát ověřené a osvědčené v praxi</span>.</p>
+            <h3 class="h3_resources">Školení</h3>
+            <p>Na školení či konzultaci člověk pochopí konept nejlépe. ANEV nabízíme širokou škálu vzdělávání od krátkých workshopů až po dlouhodobé kurzy. </p>
+            <p>Mrkněte třeba na:</p>
+            <ul>
+                <li class="advantages__list--item"><a href="https://markercs.cz/cs/home-cz/">Školení Marker pro pracovnictvo s mládeží</a> - dlouhodobý kurz pro kvalitní neformální i kompetenční vzdělávání, na který jezdí i učitelstvo</li>
+                <li class="advantages__list--item"><a href="https://markercs.cz/cs/skolycs/">Školení Marker do škol</a> - dlouhodobý kurz kompetenčního vzdělávání pro učitelstvo</li>
+                <li class="advantages__list--item"><a href="https://www.anev.cz/#calendar">Kalendář akcí ANEV</a> - zde se dozvíte, jaké otevřené kurzy jsou nyní vypsané</li>
+                <li class="advantages__list--item">Můžete samozřejmě poptat vzdělávání či konzultaci z naší nabídky. Poptejte klidně i jako jednotlivci - na základě zájmu jednotlivců můžeme školení otevřít.</li>
+            </ul>
+            <button class="offer">Stáhnout nabídku aktivit</button>
+            <h3 class="h3_resources">Ke čtení</h3>
+            <p>Mnoho zdrojů ještě neexistuje, zejména ne v ČR. Jedná se o nový koncept, který se nyní formuje v souladu se Strategií vzdělávání 2030+.</p>
+            <ul>
+                <li class="advantages__list--item"><a href="https://www.slabikarnfv.eu/slabikar_digital_cs.pdf">Slabikář neformálního vzdělávání</a> - publikace pokrývající různé aspekty neformálního vzdělávání, kterou ale hojně využívá také učitelstvo </li>
+                <li class="advantages__list--item">Článek o <a href="https://aurora-institute.org/blog/how-competency-based-education-differs-from-the-traditional-system-of-education/"> kompetenčním vzdělávání </a> od Aurora Institute (v angličtině)</li>
+            </ul>
         </div>
 
         <div class="contact" id="contact">
             <h2>Kontakt</h2>
-            <p>Asociace neformálního vzdělávání, z.s.</p>
-            <p>info@anev.cz</p>
-            <p>telefon</p>
+            <p class="about">Asociace neformálního vzdělávání <span class="underline__wavy">čerpá z letitých zkušeností svých členek a členů v oblasti neformálního i formálního vzdělávání</span>. S partnery ze Slovenska jsme vydali metodickou publikaci <span class="underline__wavy">Slabikář neformálního vzdělávání</span>, založenou na zkušenostech z českého, slovenského i mezinárodního prostředí. Prvky a metody ze Slabikáře uplatňují i učitelky a učitelé ve školách. <span class="underline__wavy">Postupným testováním jsme tak ověřili jejich funkčnost v praxi a sestavili jsme koncept kompetenčního vzdělávání</span>, který na tomto webu prezentujeme. </p>
+            <p>Neváhejte se nám ozvat v případě dotazů, žádostí o konzultaci či s návrhem spolupráce.</p>
+            <div class="contact__address">
+                <div class="contact__address--img">
+                    <img src="/img/Anezka.png">
+                </div>
+                <div class="contact__address--details">
+                    <h3 class="h3_resources">Anežka Dvořáková</h3>
+                    <p>Asociace neformálního vzdělávání, z.s.</p>
+                    <p>info@anev.cz</p>
+                    <p>+420 773 457 084</p>
+                </div>
+            </div>  
         </div>
     </div>
     <footer>

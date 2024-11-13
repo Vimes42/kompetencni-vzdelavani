@@ -1,6 +1,6 @@
 *{
     font-family: "Nunito Sans", sans-serif;
-    color: rgb(84, 84, 84);
+    color: rgb(64, 64, 64);
 }
 
 h2{
@@ -10,19 +10,21 @@ h2{
     text-decoration: underline dotted greenyellow;
 }
 
-header{
+header {
     height: 100vh;
     width: 98vw;
-    
     background-color: rgb(154, 154, 154);
-    color: rgb(84, 84, 84);
+    color: rgb(64, 64, 64);
     
-    background-image: url("img/Marker_191.jpg");
+    /* Přidání gradientu s průhledností před obrázek */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/Marker_191.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     margin-bottom: 100px;
 }
+
+
 
 .main{
     margin: 0 5vw 0 5vw;
@@ -37,10 +39,12 @@ header{
     display: flex;
     justify-content: space-between;
     padding-top: 1vh;
-    background-color: rgb(84, 84, 84);
+    background-color: rgb(64, 64, 64);
     opacity: 0.6;
     position: sticky;
+    transition: background-color 0.3s ease;
 }
+
 
 .menu{
     display: inline-block;
@@ -56,17 +60,13 @@ header{
 }
 
 .menu a:active{
-    color: rgb(224, 224, 118);
+    color: yellow;
     text-decoration: none;
 }
 
-.menu a:hover{
-    color: lightgreen;
-    border: 1px solid white;
-}
-
-.menu a:active{
-    color: greenyellow;
+.menu a:hover {
+    color: rgb(114, 170, 30); /* nebo libovolná barva pro efekt na hover */
+    transition: color 0.3s ease;
 }
 
 .menu ul{
@@ -83,27 +83,60 @@ header{
 }
 
 
+.hamburger {
+    display: none; /* Skrýt hamburger na větších obrazovkách */
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 30px;
+    height: 25px;
+}
+
+.hamburger .bar {
+    width: 100%;
+    height: 4px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
 
 .heading{
     text-align: center;
     padding-top: 10vw;
     padding-bottom: 1vw;
     font-size: 5em;
+    color: rgb(114, 170, 30);
     text-shadow: -1px 0 beige, 0 1px beige, 1px 0 beige, 0 -1px beige;
 }
 
-.subheading{
+.subheading {
     text-align: center;
     padding-top: 1vw;
     padding-bottom: 2vw;
     font-size: 2em;
+    color: rgb(114, 170, 30);
+    font-weight: 300;
     text-shadow: -1px 0 beige, 0 1px beige, 1px 0 beige, 0 -1px beige;
+    text-decoration: none;
+}
+
+.subheading::after {
+    content: "";
+    display: block;
+    width: 60%; /* délka čáry, můžeš upravit podle potřeby */
+    height: 4px;
+    background-color: rgb(114, 170, 30);
+    margin: 0 auto;
+    margin-top: 10px; /* vzdálenost od textu */
+    border-radius: 2px; /* zaoblené okraje */
 }
 
 .intro{
     margin: 20vh 5vw 20vh 5vw;
     text-align: center;
 }
+
 
 .intro__description--up{
     font-size: 1.9em;
@@ -115,7 +148,7 @@ header{
     font-size: 1.5em;
 }
 
-.underline__dotted{
+.underline__wavy{
     text-decoration: underline wavy greenyellow;
     font-weight: bold;
 }
@@ -129,24 +162,265 @@ header{
 }
 
 .characteristics__char1, .characteristics__char2, .characteristics__char3, .characteristics__char4, .characteristics__char5, .characteristics__char6, .characteristics__char7 {
-    border: 2px solid yellowgreen;
+    border: 2px solid rgb(114, 170, 30);
     padding: 5px;
     text-align: center;
 }
 
-.icon_check{
+.characteristics__div {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.characteristics__char {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
+    width: 30%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid rgb(114, 170, 30);
+    border-radius: 10px;
+    margin-bottom: 20px;
+    transition: all 0.3s ease; /* Plynulá animace */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Přidání stínu */
+}
+
+
+.advantages__list {
+    text-align: left;
+}
+.advantages__list--item {
+    list-style-type: none; 
+    position: relative;
+    padding-left: 50px; 
+    padding-bottom: 20px;
+}
+
+.advantages__list--item::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    background-image: url('../img/arrow-right.png');
+    background-size: contain; 
+    background-repeat: no-repeat;
+    padding-bottom: 20px;
+}
+
+.faq__question {
+    text-align: left;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid rgb(114, 170, 30);
+    border-radius: 10px;
+    margin-bottom: 20px;
+    transition: all 0.3s ease; /* Plynulá animace */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Přidání stínu */
+}
+
+.faq__question__up {
+    display: flex;
+    justify-content: space-between;
+}
+
+.faq__question__up img {
+    height: 100%
+}
+
+.characteristics__char p, .faq__question p {
+    margin: 10px 0 0 0;
+    transition: max-height 0.3s ease, opacity 0.3s ease;
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+    transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out; /* Plynulý efekt */
+}
+
+.characteristics__char p.show, .faq__question p.show {
+    max-height: 200px; /* Max výška při zobrazení, upravit dle potřeby */
+    opacity: 1;
+}
+
+.characteristics__char:hover, .faq__question:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Zvýraznění karty */
+    transform: scale(1.02); /* Malé zvětšení pro efekt */
+}
+
+.rotated {
+    transform: rotate(180deg);
+    transition: transform 0.3s;
+}
+
+.icon_more {
     padding: 10px;
     max-width: 30px;
 }
 
+.differences__table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 16px;
+}
+
+.differences__table--heading {
+    background-color: #f2f2f2;
+    color: rgb(114, 170, 30);
+    text-align: center;
+    font-weight: bold;
+    padding: 12px 15px;
+}
+
+.differences__table--text td {
+    padding: 12px 15px;
+}
+
+.differences__table--text:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.differences__table td {
+    border-bottom: 1px solid #ddd;
+}
+
+.differences__table tr:hover {
+    background-color: rgb(114, 170, 30);
+}
+
+.differences__table--text td:first-child {
+    font-weight: bold;
+    color: #555;
+    text-align: center;
+}
+
+.differences__table--text td:nth-child(2),
+.differences__table--text td:nth-child(3),
+.differences__table--text td:nth-child(4) {
+    text-align: center;
+}
 
 
+.h3_resources{
+    text-align: center;
+    margin-top: 50px;
+    text-decoration: underline dotted greenyellow;
+}
 
+
+.center {
+    text-align: center;
+}
+
+button {
+    background-color: rgb(114, 170, 30);
+    border: none;
+    border-radius: 8px;
+    color: white;
+    padding: 12px 25px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: box-shadow 0.2s ease, background-color 0.2s ease;
+    margin-left: 45%;
+    margin-bottom: 50px;
+  }
+  
+  button:hover {
+    background-color: rgb(177, 237, 56);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  }
+
+  button:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.6);
+}
+
+.contact__address {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 50px 0 50px 0;
+}
+
+.contact__address--img img {
+    width: 30vw;
+}
 
 footer{
-    background-color: rgb(84, 84, 84);
+    background-color: rgb(64, 64, 64);
     padding: 5vh;
     text-align: center;
     color: white;
 }
+
+
+@media (max-width: 768px) {
+    .heading {
+        font-size: 2.5em;
+        padding-top: 5vw;
+    }
+
+    .subheading {
+        font-size: 1.5em;
+    }
+    .subheading::after {
+        display: none;
+    }
+    .nav {
+        opacity: 1;
+    }
+    .menu {
+        display: none; 
+    }
+
+    /* Hamburger menu */
+    .menu {
+        display: none;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+    }
+
+    .menu.active {
+        display: block; 
+        background-color: rgb(64, 64, 64, 1); 
+       
+    }
+
+    .hamburger {
+        display: flex; 
+        margin: 20px 20px 0 0; 
+    }
+    .menu ul {
+        display: flex;
+        flex-direction: column; 
+        align-items: center; 
+        padding: 10px 0; 
+        background-color: rgb(64, 64, 64);
+        opacity: 1;
+    }
+
+    .menu li {
+        margin: 10px 0; 
+        text-align: right; 
+        background-color: rgb(64, 64, 64);;
+        opacity: 1;
+    }
+   
+    .differences__table {
+        display: block;
+        overflow-x: auto;
+        white-space: wrap;
+    }
+
+    .characteristics__char {
+        width: 100%;
+    }
+}
+
