@@ -349,6 +349,7 @@ button {
 
 .contact__address--img img {
     width: 30vw;
+    border-radius: 50;
 }
 
 footer{
