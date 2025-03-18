@@ -38,31 +38,31 @@ const characteristicsDiv = (heading, text) => {
 const chars = [
     {
         heading: 'Zaměření na kompetence',
-        text: 'Kompetenční vzdělávání se zaměřuje na rozvoj znalostí, dovedností, hodnot a postojů, které studentstvo potřebuje pro život a práci. Nejde jen o předávání znalostí a faktů.'
+        text: 'Kompetenční vzdělávání rozvíjí znalosti, dovednosti, hodnoty a postoje, které studenti a studentky potřebují pro život a práci. Nejde jen o předávání faktů, ale i o komplexní rozvoj osobnosti.'
     },
     {
         heading: 'Aktivní a individualizované učení',
-        text: 'Studentstvo se učí aktivně a individuálně (sami či ve skupině). Je zodpovědné za svůj vlastní proces učení, učitelky a učitelé jim v tom pomáhají.'
+        text: 'Studenti a studentky se učí aktivně a individuálně, ať už samostatně, nebo ve skupině. Jsou spoluzodpovědní za svůj vlastní proces a výsledky učení, učitelky a učitelé jim v tom pomáhají a podporují je.'
     },
     {
         heading: 'Průběžné a formativní hodnocení',
-        text: 'Studentstvo dostává zpětnou vazbu v průběhu celého procesu učení a mohou se tak neustále zlepšovat.'
+        text: 'Studenti a studentky dostávají zpětnou vazbu v průběhu celého procesu učení se a mohou se tak díky ní zlepšovat.'
     },
     {
         heading: 'Modulární a flexibilní obsah',
-        text: 'Studentstvo si může vybrat moduly, které je zajímají a které jim pomohou dosáhnout jejich cílů.'
+        text: 'Studenti a studentky si mohou vybrat vzdělávací moduly, které je zajímají a které jim pomohou dosáhnout jejich cílů. Obsah výuky je tak flexibilní a přizpůsobený jejich potřebám.'
     },
     {
         heading: 'Individuální tempo',
         text: 'Neexistuje žádné jednotné tempo pro všechny.'
     },
     {
-        heading: 'Učitel/ka jako facilitátor/ka',
-        text: 'Učitel/ka je facilitátor/ka a průvodce/kyně. Pomáhá studentstvu učit se a rozvíjet své kompetence.'
+        heading: 'Učitel*ka jako facilitátor*ka',
+        text: 'Učitel*ka je facilitátor*ka a průvodce*kyně. Pomáhá studentům a studentkám učit se, objevovat a rozvíjet své kompetence a sledovat svůj pokrok.'
     },
     {
-        heading: 'Zaměření na studentstvo',
-        text: 'Učení je zaměřeno na studentstvo. Vzdělavatel/ka vychází z potřeb a zájmů studentstva.'
+        heading: 'Zaměření na studenty*ky',
+        text: 'Učení je zaměřeno na studenty a studentky. Vzdělavatel*ka vychází z jejich potřeb a zájmů, aby jim daný obsah vzdělávání přizpůsobil*a.'
     },
     
 ];
@@ -107,15 +107,15 @@ const faqDiv = (text, answer) => {
 const questions = [
     {
         text: 'Jak mohu kompetenční vzdělávání zapojit do učení?',
-        answer: `Jde například o to, brát v potaz, že studentstvo rozvíjí znalosti, dovednosti, postoje a hodnoty. Cíle učení by tak měly být formulovány z pohledu všech složek kompetencí a dle toho je také třeba volit vhodné metody, které cílové skupině pomohou rozvíjet se. Pro více informací o zacílení aktivit můžete proklikat náš <a href="https://www.slabikarnfv.eu/cs/e-learning target="_blank"">e-learning</a>.`
+        answer: `Kompetenční vzdělávání můžete začlenit tím, že při plánování výuky zohledníte, že studenti a studentky rozvíjí nejen znalosti, ale také dovednosti, postoje a hodnoty. Stanovte cíle učení, které reflektují všechny složky kompetencí, a vybírejte metody a aktivity, jež podpoří jejich komplexní rozvoj. Důležité je také vytvářet prostředí, kde studentstvo může aktivně objevovat, spolupracovat a reflektovat své učení. Pokud je pro vás koncept kompetenčního vzdělávání zatím neuchopitelný nebo moc komplexní, doporučujeme začít můžete také s postupným zapojováním zajímavých metod či se zohledňováním stylů učení v přípravě i realizaci aktivit. Jak na to? Mrkněte na <a href="https://www.slabikarnfv.eu/cs/e-learning" target="_blank">e-learning</a>, který vás provede základy práce s kompetencemi. Informace ale najdete také ve <a href="https://www.slabikarnfv.eu/slabikar_digital_cs.pdf" target="_blank">Slabikáři neformálního vzdělávání</a> (ke kompetencím, vzdělávacím cílům i stylům učení). Různé zajímavé metody můžete hledat na <a href="https://www.neformalnivzdelavani.eu/metody/" target="_blank">webu k neformálnímu vzdělávání</a>.`
     },
     {
         text: "Má kompetenční vzdělávání vyšší náklady na implementaci?",
-        answer: 'Než se to člověk naučí, znamená to samozřejmě časovou investici.'
+        answer: 'Implementace kompetenčního vzdělávání může vyžadovat počáteční časovou investici, abyste se seznámili*y s novými přístupy a metodami. Dlouhodobě však přináší výhody v podobě vyšší motivace studentstva, efektivnějšího učení a lepších výsledků. Finanční náklady nemusí být nutně vyšší; často jde spíše o změnu přístupu než o investice do materiálů. Není ale třeba hned měnit vše. Změny samozřejmě můžete zavádět postupně, jak vám to budou kapacity dovolovat.'
     },
     {
-        text: "Jak hodnotit kompetence?",
-        answer: 'To jsme právě testovali s učiteli a učitelkami, jež prochází naším školením <a href="https://markercs.cz/cs/skolycs/ target="_blank"">Marker do škol</a>. Brzy přineseme konkrétní výsledky.'
+        text: "Jak vyhodnocovat posun v kompetencích?",
+        answer: 'Hodnocení kompetencí vyžaduje průběžné a formativní hodnocení, které sleduje pokrok studentů a studentek v jednotlivých oblastech. V rámci našeho školení <a href="https://markercs.cz/cs/skolycs/" target="_blank">Marker do škol</a> jsme tuto oblast testovali*y s učitelkami a učiteli. Brzy vám přineseme konkrétní a praktické nástroje, které vám pomohou efektivně hodnotit rozvoj kompetencí.'
     },
 ]
 

@@ -348,8 +348,8 @@ button {
 }
 
 .contact__address--img img {
-    width: 30vw;
-    border-radius: 50;
+    width: 20vw;
+    border-radius: 50%;
 }
 
 footer{
