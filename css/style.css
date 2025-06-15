@@ -1,3 +1,4 @@
+/* stávající styly */
 *{
     font-family: "Nunito Sans", sans-serif;
     color: rgb(64, 64, 64);
@@ -240,17 +241,19 @@ header {
     overflow: hidden;
     max-height: 0;
     opacity: 0;
-    transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out; /* Plynulý efekt */
+    transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
 }
 
 .characteristics__char p.show, .faq__question p.show {
-    max-height: 200px; /* Max výška při zobrazení, upravit dle potřeby */
+    max-height: 1000px; 
     opacity: 1;
+    overflow: visible; 
+    padding: 1em;
 }
 
 .characteristics__char:hover, .faq__question:hover {
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Zvýraznění karty */
-    transform: scale(1.02); /* Malé zvětšení pro efekt */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transform: scale(1.02);
 }
 
 .rotated {
@@ -329,14 +332,14 @@ button {
     transition: box-shadow 0.2s ease, background-color 0.2s ease;
     margin-left: 45%;
     margin-bottom: 50px;
-  }
-  
-  button:hover {
+}
+ 
+button:hover {
     background-color: rgb(177, 237, 56);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
-  }
+}
 
-  button:focus {
+button:focus {
     outline: none;
     box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.6);
 }
@@ -391,7 +394,7 @@ footer{
     .menu.active {
         display: block; 
         background-color: rgb(64, 64, 64, 1); 
-       
+        
     }
 
     .hamburger {
@@ -403,7 +406,7 @@ footer{
         flex-direction: column; 
         align-items: center; 
         padding: 10px 0; 
-        background-color: rgb(64, 64, 64);
+        background-color: rgb(64, 64, 64);;
         opacity: 1;
     }
 
@@ -413,7 +416,7 @@ footer{
         background-color: rgb(64, 64, 64);;
         opacity: 1;
     }
-   
+    
     .differences__table {
         display: block;
         overflow-x: auto;
@@ -424,4 +427,3 @@ footer{
         width: 100%;
     }
 }
-
