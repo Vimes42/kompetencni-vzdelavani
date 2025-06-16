@@ -363,9 +363,9 @@ button:focus {
 }
 
 .contact__address--img img {
-    width: 20vw;
+    width: 15vw;
     border-radius: 50%;
-    margin-top: 50px;
+    margin: 50px 0;
 }
 
 footer{
@@ -376,39 +376,36 @@ footer{
 }
 
 #backToTopBtn {
-    display: none; /* Ve výchozím stavu skryto */
-    position: fixed; /* Pevná pozice na obrazovce */
-    bottom: 20px; /* 20px od spodního okraje */
-    right: 20px; /* 20px od pravého okraje */
-    z-index: 99; /* Vysoké z-index, aby bylo nad ostatními prvky */
-    border: none; /* Odstranění okraje */
-    outline: none; /* Odstranění obrysu při fokusu */
-    background-color: rgb(114, 170, 30); /* Barva pozadí (tvá zelená) */
-    color: white; /* Barva textu (už není potřeba pro ikonu, ale nevadí) */
-    cursor: pointer; /* Změna kurzoru na ukazatel při najetí */
-    /* Padding a font-size odstraníme, protože máme obrázek */
-    padding: 10px; /* Menší padding, protože už není text */
-    width: 50px; /* Pevná šířka tlačítka, můžeš upravit */
-    height: 50px; /* Pevná výška tlačítka, můžeš upravit */
-    border-radius: 50%; /* Tlačítko uděláme kulaté */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Jemný stín */
-    transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Plynulá animace */
-    
-    /* Flexbox pro vycentrování obrázku uvnitř tlačítka */
+    display: none; 
+    position: fixed; 
+    bottom: 20px; 
+    right: 20px; 
+    z-index: 99;
+    border: none; 
+    outline: none; 
+    background-color: rgb(114, 170, 30);
+    color: white;
+    cursor: pointer;
+    padding: 10px; 
+    width: 50px; 
+    height: 50px; 
+    border-radius: 50%; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 #backToTopBtn img {
-    width: 24px; /* Velikost ikony */
-    height: 24px; /* Velikost ikony */
-    filter: invert(100%); /* Změní černou ikonu na bílou, pokud je třeba */
+    width: 24px; 
+    height: 24px; 
+    filter: invert(100%); 
 }
 
 #backToTopBtn:hover {
-    background-color: rgb(177, 237, 56); /* Změna barvy při najetí myši */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Větší stín při najetí */
+    background-color: rgb(177, 237, 56); 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); 
 }
 
 
@@ -484,6 +481,6 @@ footer{
     .contact__address--img img {
         width: 50vw; 
         max-width: 200px; 
-        margin-top: 50px;
+        margin: 50px 0 10px 0;
     }
 }
