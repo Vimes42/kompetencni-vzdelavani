@@ -107,7 +107,7 @@ const faqDiv = (text, answer) => {
 const questions = [
     {
         text: 'Jak mohu kompetenční vzdělávání zapojit do učení?',
-        answer: `Kompetenční vzdělávání můžete začlenit tím, že při plánování výuky zohledníte, že studenti a studentky rozvíjí nejen znalosti, ale také dovednosti, postoje a hodnoty. Stanovte cíle učení, které reflektují všechny složky kompetencí, a vybírejte metody a aktivity, jež podpoří jejich komplexní rozvoj. Důležité je také vytvářet prostředí, kde studentstvo může aktivně objevovat, spolupracovat a reflektovat své učení. Pokud je pro vás koncept kompetenčního vzdělávání zatím neuchopitelný nebo moc komplexní, doporučujeme začít můžete také s postupným zapojováním zajímavých metod či se zohledňováním stylů učení v přípravě i realizaci aktivit. Jak na to? Mrkněte na <a href="https://www.slabikarnfv.eu/cs/e-learning" target="_blank">e-learning</a>, který vás provede základy práce s kompetencemi. Informace ale najdete také ve <a href="https://www.slabikarnfv.eu/slabikar_digital_cs.pdf" target="_blank">Slabikáři neformálního vzdělávání</a> (ke kompetencím, vzdělávacím cílům i stylům učení). Různé zajímavé metody můžete hledat na <a href="https://www.neformalnivzdelavani.eu/metody/" target="_blank">webu k neformálnímu vzdělávání</a>.`
+        answer: `Kompetenční vzdělávání můžete začlenit tím, že při plánování výuky zohledníte, že studenti a studentky rozvíjí nejen znalosti, ale také dovednosti, postoje a hodnoty. Stanovte cíle učení, které reflektují všechny složky kompetencí, a vybírejte metody a aktivity, jež podpoří jejich komplexní rozvoj. Důležité je také vytvářet prostředí, kde studentstvo může aktivně objevovat, spolupracovat a reflektovat své učení. Pokud je pro vás koncept kompetenčního vzdělávání zatím neuchopitelný nebo moc komplexní, doporučujeme začít můžete také s postupným zapojováním zajímavých metod či se zohledňováním stylů učení v přípravě i realizaci aktivit. Jak na to? Mrkněte na <a href="https://www.slabikarnfv.eu/cs/e-learning" target="_blank">e-learning</a>, který vás provede základy práce s kompetencemi. Informace ale najdete také ve <a href="https://www.slabikarnfv.eu/slabikar_digital_cs.pdf" target="_blank">Slabikáři neformálního vzdělávání</a> (ke kompetencím, vzdělávacím cílům i stylům učení). Různé zajímavé metody můžete hledat na <a href="https://www.neformalnivzdelavani.eu/metody/" target="_blank">webu k neformálnímu vzdělávání</a>. Pomůckou může být také <a href="https://markercs.cz/wp-content/uploads/2025/05/Jak-rozvijet-kompetenci-umet-se-ucit_Metodicka-pomucka-pro-ucitele.pdf" target="_blank">metodický materiál ke kompetenci "umět se učit"</a>.`
     },
     {
         text: "Má kompetenční vzdělávání vyšší náklady na implementaci?",
@@ -115,7 +115,7 @@ const questions = [
     },
     {
         text: "Jak vyhodnocovat posun v kompetencích?",
-        answer: 'Hodnocení kompetencí vyžaduje průběžné a formativní hodnocení, které sleduje pokrok studentů a studentek v jednotlivých oblastech. V rámci našeho školení <a href="https://markercs.cz/cs/skolycs/" target="_blank">Marker do škol</a> jsme tuto oblast testovali*y s učitelkami a učiteli. Brzy vám přineseme konkrétní a praktické nástroje, které vám pomohou efektivně hodnotit rozvoj kompetencí.'
+        answer: 'Hodnocení kompetencí vyžaduje průběžné a formativní hodnocení, které sleduje pokrok studentů a studentek v jednotlivých oblastech. Věnujeme mu kapitolu ve Slabikáři neformálního vzdělávání (ke stažení níže), nebo v <a href="https://markercs.cz/wp-content/uploads/2025/05/Jak-rozvijet-kompetenci-umet-se-ucit_Metodicka-pomucka-pro-ucitele.pdf" target="_blank">metodickém materiálu</a> ze školení <a href="https://markercs.cz/cs/skolycs/" target="_blank">Marker do škol</a>. Jde to dělat i komplexněji, na Markeru do škol jsme například sledovali*y, jaký vliv mají na žáky a žákyně změny ve výuce díky poznatkům ze školení, a to v oblasti kompetence "umět se učit". Výzkumná zpráva je na <a href="https://youthwatch.sk/preview_pdf/?document=2466" target="_blank">webu</a>.'
     },
 ]
 
@@ -126,6 +126,31 @@ questions.forEach(q => {
 });
 
 const buttonOffer = document.querySelector(".offer");
-buttonOffer.addEventListener("click", function() {
+buttonOffer.addEventListener("click", () => {
     window.open("https://www.anev.cz/wp-content/uploads/2024/04/nabidka_spoluprace_anev_final.pdf", "_blank");
   });
+
+const buttonSlabikar = document.querySelector(".slabikar");
+buttonSlabikar.addEventListener("click", ()=> {
+    window.open("https://www.anev.cz/projekty/slabikar/", "_blank");
+  });
+
+
+const backToTopBtn = document.getElementById('backToTopBtn');
+
+function scrollFunction() {
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        backToTopBtn.style.display = "block";
+    } else {
+        backToTopBtn.style.display = "none";
+    }
+}
+
+window.onscroll = () => { scrollFunction() };
+
+backToTopBtn.addEventListener('click', () => {
+        window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+});
