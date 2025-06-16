@@ -330,8 +330,8 @@ button {
     font-size: 16px;
     cursor: pointer;
     transition: box-shadow 0.2s ease, background-color 0.2s ease;
-    margin-left: 45%;
-    margin-bottom: 50px;
+    display: block;
+    margin: 50px auto;
 }
  
 button:hover {
@@ -346,8 +346,7 @@ button:focus {
 
 .contact__address {
     display: flex;
-    justify-content: space-evenly;
-    margin: 50px 0 50px 0;
+    justify-content: space-between;
 }
 
 .contact__address--img img {
@@ -425,5 +424,17 @@ footer{
 
     .characteristics__char {
         width: 100%;
+    }
+
+    .contact__address {
+        flex-direction: column; 
+        align-items: center;    
+        text-align: center;     
+    }
+
+    .contact__address--img img {
+        width: 50vw; 
+        max-width: 200px; 
+        margin-top: 50px;
     }
 }
