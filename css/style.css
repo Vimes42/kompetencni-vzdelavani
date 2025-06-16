@@ -45,20 +45,21 @@ header {
 
 
 .logo{
-    height: 4vw;
-    padding: 20px;
+    height: 80px;
+    margin: 10px;
 }
 
 .nav{
     position: absolute; 
     top: 0;             
     width: 100%;        
-    padding-top: 1vh;
+    padding: 10px 20px;
     background-color: rgb(64, 64, 64);
     opacity: 0.6;
     display: flex; 
     justify-content: space-between;
     z-index: 1000; 
+    min-height: 60px;
 }
 
 
@@ -422,6 +423,9 @@ footer{
     }
     .nav {
         opacity: 1;
+    }
+    .logo{
+    height: 40px;
     }
     .menu {
         display: none; 
